@@ -1,0 +1,89 @@
+#star:hover {
+  color: gold;
+}
+.image-comic {
+  width: 90%;
+}
+.comic {
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 25px 10px 15px 10px;
+  margin: 0 0 5px 20px;
+}
+.qualification {
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px 10px 15px 10px;
+  margin: 0 0 5px 20px;
+  text-align: center;
+}
+.buttons {
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px 10px 15px 10px;
+  margin: 0 0 5px 20px;
+}
+.button-rate {
+  border: none;
+  border-radius: 15px;
+  color: #000000;
+  width: 100%;
+  background-color: gold;
+  padding: 10px 20px 10px 20px;
+}
+.button-back {
+  border: none;
+  border-radius: 15px;
+  color: #000000;
+  width: 100%;
+  background-color: #d40c2f;
+  padding: 10px 20px 10px 20px;
+}
+.button-random {
+  border: none;
+  border-radius: 15px;
+  color: #000000;
+  width: 100%;
+  background-color: #1781ec;
+  padding: 10px 20px 10px 20px;
+}
+.button-next {
+  border: none;
+  border-radius: 15px;
+  color: #000000;
+  width: 100%;
+  background-color: #28b463;
+  padding: 10px 20px 10px 20px;
+}
+.button-rate:hover {
+  background-color: #000000;
+  color: gold;
+  outline: none;
+}
+.button-back:hover {
+  background-color: #db1939;
+  color: #ffffff;
+  outline: none;
+}
+.button-random:hover {
+  background-color: #2e91f5;
+  color: #ffffff;
+  outline: none;
+}
+.button-next:hover {
+  background-color: #2feb7d;
+  color: #ffffff;
+  outline: none;
+}
+.button-rate:focus {
+  outline: none;
+}
+.button-back:focus {
+  outline: none;
+}
+.button-random:focus {
+  outline: none;
+}
+.button-next:focus {
+  outline: none;
+}
