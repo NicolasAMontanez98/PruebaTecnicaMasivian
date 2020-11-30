@@ -1,6 +1,29 @@
 #star:hover {
   color: gold;
 }
+.input-rating {
+  width: 100%;
+  height: 61px;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  font-weight: bold;
+  font-size: 150%;
+  text-align: center;
+}
+.input-rating:focus {
+  outline: none;
+}
+.button-star {
+  border: none;
+  padding: 0 0 0 0;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+.button-star:focus {
+  outline: none;
+}
 .image-comic {
   width: 90%;
 }
@@ -8,20 +31,20 @@
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 25px 10px 15px 10px;
-  margin: 0 0 5px 20px;
+  margin: 0 50px 5px 50px;
 }
 .qualification {
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 15px 10px 15px 10px;
-  margin: 0 0 5px 20px;
+  margin: 0 50px 5px 50px;
   text-align: center;
 }
 .buttons {
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 15px 10px 15px 10px;
-  margin: 0 0 5px 20px;
+  margin: 0 50px 5px 50px;
 }
 .button-rate {
   border: none;

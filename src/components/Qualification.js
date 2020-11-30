@@ -1,99 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { faStar as faStarEmpty } from "@fortawesome/free-regular-svg-icons";
+import Stars from "./Stars";
 import "../styles/components.css";
 
-export default function Qualification({ qualification }) {
-  const calificar = (e) => {
-    e.preventDefault();
-  };
+export default function Qualification() {
+  const [rating, setRating] = useState(0);
+
   return (
     <div className="qualification">
+      <input
+        type="number"
+        className="input-rating"
+        min="0"
+        max="5"
+        defaultValue={rating}
+        onChange={(e) => setRating(e.target.value)}
+      />
       <div className="row">
         <div className="col">
-          {qualification === 1 ? (
-            <div>
-              <FontAwesomeIcon
-                icon={faStar}
-                size="2x"
-                id="star"
-                className="star"
-              />
-              <FontAwesomeIcon icon={faStar} size="3x" id="star" />
-              <FontAwesomeIcon icon={faStar} size="4x" id="star" />
-              <FontAwesomeIcon icon={faStar} size="3x" id="star" />
-              <FontAwesomeIcon icon={faStar} size="2x" id="star" />
-            </div>
-          ) : qualification === 2 ? (
-            <div>
-              <FontAwesomeIcon
-                icon={faStar}
-                size="2x"
-                id="star"
-                className="star"
-              />
-              <FontAwesomeIcon icon={faStar} size="3x" id="star" />
-              <FontAwesomeIcon icon={faStar} size="4x" id="star" />
-              <FontAwesomeIcon icon={faStar} size="3x" id="star" />
-              <FontAwesomeIcon icon={faStar} size="2x" id="star" />
-            </div>
-          ) : qualification === 3 ? (
-            <div>
-              <FontAwesomeIcon
-                icon={faStar}
-                size="2x"
-                id="star"
-                className="star"
-              />
-              <FontAwesomeIcon icon={faStar} size="3x" id="star" />
-              <FontAwesomeIcon icon={faStar} size="4x" id="star" />
-              <FontAwesomeIcon icon={faStar} size="3x" id="star" />
-              <FontAwesomeIcon icon={faStar} size="2x" id="star" />
-            </div>
-          ) : qualification === 4 ? (
-            <div>
-              <FontAwesomeIcon icon={faStar} size="3x" color="gold" id="star" />
-              <FontAwesomeIcon icon={faStar} size="3x" color="gold" id="star" />
-              <FontAwesomeIcon icon={faStar} size="3x" color="gold" id="star" />
-              <FontAwesomeIcon icon={faStar} size="3x" color="gold" id="star" />
-              <FontAwesomeIcon
-                icon={faStarEmpty}
-                size="3x"
-                color="gold"
-                id="star"
-              />
-            </div>
-          ) : qualification === 5 ? (
-            <div>
-              <FontAwesomeIcon
-                icon={faStar}
-                size="2x"
-                id="star"
-                className="star"
-              />
-              <FontAwesomeIcon icon={faStar} size="3x" id="star" />
-              <FontAwesomeIcon icon={faStar} size="4x" id="star" />
-              <FontAwesomeIcon icon={faStar} size="3x" id="star" />
-              <FontAwesomeIcon icon={faStar} size="2x" id="star" />
-            </div>
-          ) : (
-            <div>
-              <FontAwesomeIcon
-                icon={faStar}
-                size="4x"
-                id="star"
-                className="star"
-              />
-              <FontAwesomeIcon icon={faStar} size="4x" id="star" />
-              <FontAwesomeIcon icon={faStar} size="4x" id="star" />
-              <FontAwesomeIcon icon={faStar} size="4x" id="star" />
-              <FontAwesomeIcon icon={faStar} size="4x" id="star" />
-            </div>
-          )}
+          <Stars rating={rating} />
         </div>
         <div className="col mr-3">
-          <button className="button-rate" onClick={calificar}>
+          <button className="button-rate">
             <h3>
               <strong>Calificar</strong>
             </h3>
